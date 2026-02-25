@@ -28,3 +28,54 @@ graph LR
     C --> E[Redirect to<br>Dashboard];
     E --> F[Display User Info];
     F --> G[Logout:<br>Clear Token & Redirect];
+
+---
+
+
+1. User enters username and password
+2. API call made to DummyJSON auth endpoint
+3. If valid → JWT token received and stored
+4. User redirected to dashboard
+5. Dashboard shows user information
+6. On logout → token cleared, redirect to login
+
+---
+
+## 🚀 Tech Stack
+
+| Frontend | Routing | API Calls | Storage | Styling |
+|---|---|---|---|---|
+| React | React Router | Axios | LocalStorage | CSS3 |
+| JavaScript (ES6) | | DummyJSON API | | |
+| HTML5 | | | | |
+
+---
+
+## ⚠️ Error Handling
+
+| Scenario | User Message |
+|---|---|
+| Empty fields | "Please fill all fields" |
+| Wrong credentials | "Invalid credentials" |
+| Network issue | "Network error" |
+| Unauthorized access | Redirect to login |
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/beingtaha/Authentication-with-JWT_Appverse-Internship-Project.git
+
+# Navigate to project directory
+cd Authentication-with-JWT_Appverse-Internship-Project
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+# Open in browser
+http://localhost:3000
